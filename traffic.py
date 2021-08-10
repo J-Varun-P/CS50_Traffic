@@ -97,7 +97,7 @@ def get_model():
 
         # Convolutional layer. Learn 32 filters using a 3x3 kernel
         tf.keras.layers.Conv2D(
-            132, (3, 3), activation="relu", input_shape=(IMG_WIDTH / 2, IMG_HEIGHT / 2, 3)
+            64, (3, 3), activation="relu", input_shape=(IMG_WIDTH / 2, IMG_HEIGHT / 2, 3)
         ),
 
         # Convolutional layer. Learn 32 filters using a 4x4 kernel

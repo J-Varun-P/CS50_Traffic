@@ -10,7 +10,7 @@ Adding different Pooling Layers reduces the computation time for a model but it 
 
 ### Hidden Layers
 
-The number and sizes of Hidden Layers depend on the problem we're trying to model our Neural Network for. For this project, One hidden layer was enough to get to an accuracy of over 97% consistently but what truly matters are the number of neurons in the hidden layer. If the number of neurons in a hidden layer is too low (< 200 (for this project)) the accuracy of the Neural Network got much worse. Also, far too many neurons in a hidden layer wouldn't increase the accuracy too much, after a specific value (around 1000 neurons for this project) the accuracy didn't change much at all and only computation time incresed upon increasing the number of neurons over 1000.
+The number and sizes of Hidden Layers depend on the problem we're trying to model our Neural Network for. For this project, One hidden layer was enough to get to an accuracy of over 97% consistently but what truly matters are the number of neurons in the hidden layer. If the number of neurons in a hidden layer is too low (< 200 (for this project)) the accuracy of the Neural Network got much worse. Also, far too many neurons in a hidden layer wouldn't increase the accuracy too much, after a specific value (around 1000 neurons for this project) the accuracy didn't change much at all and only computation time increased upon increasing the number of neurons over 1000.
 
 ### Dropouts
 
