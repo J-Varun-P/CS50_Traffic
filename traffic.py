@@ -66,14 +66,11 @@ def load_data(data_dir):
         sub_dir_path = os.path.join('gtsrb', x)
         for y in os.listdir(sub_dir_path):
             file_path = os.path.join(sub_dir_path, y)
-            print(file_path, x)
+            #print(file_path, x)
             img = cv2.imread(file_path)
             img = cv2.resize(img, (IMG_WIDTH, IMG_HEIGHT), interpolation=cv2.INTER_AREA)
             images.append(img)
             labels.append(int(x))
-    print(len(images), len(labels), images[0].shape)
-    for i in range(10):
-        print(images[i].shape)
     return (images, labels)
     #raise NotImplementedError
 
@@ -97,7 +94,7 @@ def get_model():
 
         # Convolutional layer. Learn 32 filters using a 3x3 kernel
         tf.keras.layers.Conv2D(
-            64, (3, 3), activation="relu", input_shape=(IMG_WIDTH / 2, IMG_HEIGHT / 2, 3)
+            32, (3, 3), activation="relu", input_shape=(IMG_WIDTH / 2, IMG_HEIGHT / 2, 3)
         ),
 
         # Convolutional layer. Learn 32 filters using a 4x4 kernel
@@ -112,7 +109,7 @@ def get_model():
         tf.keras.layers.Dense(1024, activation="relu"),
         tf.keras.layers.Dropout(0.5),
 
-        # Add an output layer with output units for all 10 digits
+        # Add an output layer with output units for all NUM_CATEGORIES
         tf.keras.layers.Dense(NUM_CATEGORIES, activation="softmax")
     ])
 
