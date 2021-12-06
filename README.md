@@ -1,4 +1,4 @@
-#Neural_Network_Traffic (CS50AI)
+# Neural_Network_Traffic (CS50AI)
 
 An AI to identify which traffic sign appears in a photograph.
 
