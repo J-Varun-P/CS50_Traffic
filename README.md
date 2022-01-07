@@ -2,9 +2,11 @@
 
 An AI to identify which traffic sign appears in a photograph.
 
-Please visit the [Following Link](https://cs50.harvard.edu/ai/2020/projects/5/traffic/) for more information about the project.
+Please visit the [Following Link](https://cs50.harvard.edu/ai/2020/projects/5/traffic/) for more information about the Project.
 
-These are the following observations that I noticed after running Neural Network models for over a hundred times for this project.
+Video description of the Project can be found at [My YouTube link for Neural Networks](https://youtu.be/Sl8pMJTcGKk)
+
+These are the following observations that I noticed after running Neural Network models for over a hundred times for this Project.
 
 ### Convolutional Layers
 
